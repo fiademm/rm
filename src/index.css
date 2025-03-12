@@ -1,13 +1,99 @@
-body {
+/* Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato-Regular";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Global Variables */
+:root {
+  --primary-color: #2c4736;
+  --secondary-color: #2ecc71;
 }
+
+/* Body */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile-first approach */
+.container {
+  padding: 10px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url(./assets/fonts/Lato-Black.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url(./assets/fonts/Lato-Bold.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato-Hairline';
+  src: url(./assets/fonts/Lato-Hairline.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato-Heavy';
+  src: url(./assets/fonts/Lato-Heavy.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url(./assets/fonts/Lato-Light.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url(./assets/fonts/Lato-Medium.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(./assets/fonts/Lato-Regular.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url(./assets/fonts/Lato-Semibold.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url(./assets/fonts/Lato-Thin.ttf);
+  font-display: swap;
+}
+
+@import url('./styles/styles.css');

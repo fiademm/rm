@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { lazy, Suspense } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ErrorBoundary from "./utils/ErrorBoundary";
 
-function App() {
+//import components lazily
+const Home = lazy(() => import('./pages/Home.js')); 
+const About = lazy(() => import('./pages/About.js')); 
+const Articles = lazy(() => import('./pages/Articles.js')); 
+const Article = lazy(() => import('./components/molecules/Article.js')); 
+const Leadership = lazy(() => import('./pages/Leadership.js'));
+const LeaderSet = lazy(() => import('./components/molecules/LeaderSet.js'));
+const Contact = lazy(() => import('./pages/Contact.js'));
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ErrorBoundary>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Articles" element={<Article />} />
+            <Route path="/Leadership" element={<LeaderSet />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
+      </ErrorBoundary>
+    </BrowserRouter>
   );
 }
 

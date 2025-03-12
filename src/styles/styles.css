@@ -1,0 +1,347 @@
+.screen-container {
+  display: flex;
+  min-height: 100vh;
+}
+.navbar,
+.content,
+.footer {
+  padding: 1rem 4rem;
+}
+.navbar,
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+/* Navbar Styling */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  z-index: 1000;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+  color: #ffcc00;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* Content style */
+.content {
+  display: flex;
+  background-color: #fcfcfc;
+  flex: 1;
+}
+/* Footer style */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+.footer-container-left,
+.footer-container-right {
+}
+
+.footer-container-right {
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* slideshow styles */
+.slideshow-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0rem;
+}
+
+.slide {
+  position: relative;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 60vh; /* Adjust height as needed */
+  object-fit: cover; /* Ensure images cover the slide area */
+  border-radius: 0.6rem;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/* Customize slick carousel dots */
+.slick-dots {
+  bottom: 1rem;
+}
+
+.slick-dots li button:before {
+  color: white; /* Dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6347; /* Active dot color */
+}
+
+/* Customize arrows */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ff6347; /* Arrow color */
+  font-size: 1rem;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.article-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.article-description {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.article-date {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.read-more-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.read-more-button:hover {
+  background-color: #ff4500;
+}
+
+/* socials styles */
+.socials-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.socials-left-line,
+.socials-right-line {
+  height: 0.1rem;
+  background-color: #444;
+  flex: 1;
+}
+.social-icons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #444;
+}
+
+/* ARTICLE CARD STYLING */
+
+/* Section Styling */
+.scrollable-cards-section, .leadership-profile-cards-section {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-header, .leadership-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.section-title, .leadership-section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section-subtitle .leadership-section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 1.4rem 0;
+  }
+
+.view-all-button, .leadership-view-all-button {
+  padding: 0.4rem 1.2rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.view-all-button:hover, .leadership-view-all-button:hover {
+  background-color: #ff4500;
+}
+
+/* Cards Container Styling */
+.article-cards-container, .leadership-cards-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.4rem;
+  padding-bottom: 1.4rem; /* Space for scrollbar */
+}
+
+/* Hide scrollbar */
+.article-cards-container::-webkit-scrollbar, .leadership-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card Styling */
+.article-card, .leadership-card {
+  flex: 0 0 20rem; /* Fixed width for each card */
+  background: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card-image, .leadership-card-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.article-card-content, .leadership-card-content {
+  padding: 0.8rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card-title, .leadership-card-fullname {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 0.6rem 0;
+}
+
+.article-card-description, .leadership-card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 0.6rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article-card-date, .leadership-card-job-role {
+  font-size: .9rem;
+  color: #999;
+  margin: 0 0 .4rem 0;
+}
+
+.article-read-more-button, .leadership-read-more-button {
+  padding: 0.3rem 1rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: .4rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.read-more-button:hover, .leadership-read-more-button:hover {
+  background-color: #ff4500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    display: none;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+}
