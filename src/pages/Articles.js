@@ -59,7 +59,7 @@ const Articles = () => {
         <h2 className="section-title">Articles</h2>
         {/* <p className="section-subtitle">Get more insights on what RM Foundation does...</p> */}
         <button className="view-all-button" onClick={handleViewAll}>
-          View All
+          View All Articles
         </button>
       </div>
       <div className="article-cards-container">

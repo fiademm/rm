@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <>
         <div className="footer">
@@ -8,9 +11,9 @@ const Footer = () => {
             Copyright @ 2025 RM Foundation
           </span>
           <div className="footer-container-right">
-            <span>Terms & Conditions</span>
+            <span onClick={() => navigate("/Terms+&+Conditions")}>Terms & Conditions</span>
             <span>|</span>
-            <span>Privacy Policy</span>
+            <span onClick={() => navigate("/Privacy+Policy")}>Privacy Policy</span>
           </div>
         </div>
     </>

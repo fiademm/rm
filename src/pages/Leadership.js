@@ -6,35 +6,35 @@ const Leadership = () => {
 
   const profiles = [
     {
-      image: "https://placehold.co/600x400",
+      image: "https://img.freepik.com/premium-photo/portrait-photography-african-business-man_1085768-22.jpg",
       fullName: "John Doe",
       jobRole: "Software Engineer",
       company: "Tech Corp",
       description: "John is a passionate software engineer with expertise in React and Node.js.",
     },
     {
-      image: "https://placehold.co/600x400",
+      image: "https://img.freepik.com/premium-photo/portrait-photography-african-business-man_1085768-22.jpg",
       fullName: "Jane Smith",
       jobRole: "Product Manager",
       company: "Innovate Inc",
       description: "Jane is a product manager with a focus on user-centered design and agile methodologies.",
     },
     {
-      image: "https://placehold.co/600x400",
+      image: "https://img.freepik.com/premium-photo/portrait-photography-african-business-man_1085768-22.jpg",
       fullName: "Alice Johnson",
       jobRole: "Data Scientist",
       company: "DataWorks",
       description: "Alice specializes in machine learning and big data analytics.",
     },
     {
-      image: "https://placehold.co/600x400",
+      image: "https://img.freepik.com/premium-photo/portrait-photography-african-business-man_1085768-22.jpg",
       fullName: "Bob Brown",
       jobRole: "UX Designer",
       company: "Design Studio",
       description: "Bob is a creative UX designer with a passion for intuitive user interfaces.",
     },
     {
-      image: "https://placehold.co/600x400",
+      image: "https://img.freepik.com/premium-photo/portrait-photography-african-business-man_1085768-22.jpg",
       fullName: "Charlie Davis",
       jobRole: "DevOps Engineer",
       company: "Cloud Solutions",
@@ -52,7 +52,7 @@ const Leadership = () => {
       <div className="leadership-section-header">
         <h2 className="leadership-section-title">Our Team</h2>
         <button className="leadership-view-all-button" onClick={handleViewAll}>
-          View All
+          View Team Members
         </button>
       </div>
       {/* <p className="leadership-section-subtitle">Meet the talented individuals behind our success.</p> */}

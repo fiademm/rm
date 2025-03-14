@@ -1,36 +1,44 @@
 import React, { useState } from "react";
+import logo from "../logo.svg";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="navbar">
       <div className="nav-logo">
-        RM Foundation
-        <img src="" alt="logo" />
+        <img
+          className="logo"
+          src={logo}
+          alt="logo"
+          onClick={() => navigate("/")}
+        />
+        {/* <span className="logo-text">RM Foundation</span> */}
       </div>
 
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         ☰
       </div>
-
+      
       {/* Navigation Menu */}
       <ul className={`nav-menu ${isOpen ? "open" : ""}`}>
         <li>
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#about">About us</a>
+          <a href="/About">About us</a>
         </li>
         <li>
-          <a href="#articles">Articles</a>
+          <a href="/Articles">Articles</a>
         </li>
         <li>
-          <a href="#contact">Contact us</a>
+          <a href="/Contact">Contact us</a>
         </li>
         <li>
-          <a href="#leadership">Our Leadership</a>
+          <a href="/Leadership">Our Leadership</a>
         </li>
       </ul>
     </nav>
@@ -38,3 +46,18 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+const Welcome = () => {
+  return (
+    <>
+      <div className="content glitch-container">
+        <div class="glitch-wrapper">
+          <div class="glitch" data-glitch="You are welcome to RM Foundation">
+            You are welcome to RM Foundation
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};

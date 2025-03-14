@@ -97,3 +97,7 @@ a:hover {
 }
 
 @import url('./styles/styles.css');
+@import url('./styles/mobile.css');
+@import url('./styles/About.css');
+@import url('./styles/Test.css');
+@import url('./styles/Article.css');
