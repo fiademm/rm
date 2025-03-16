@@ -1,6 +1,4 @@
 import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Sphere } from '@react-three/drei';
 import { FaRocket, FaLightbulb, FaHandshake } from 'react-icons/fa'; // For 2D icons
 
 const Test = () => {
@@ -38,18 +36,6 @@ const Test = () => {
           <h2>Values</h2>
           <p>Integrity, Innovation, Collaboration, and Sustainability.</p>
         </div>
-      </div>
-
-      {/* 3D Illustration Section */}
-      <div className="illustration-section">
-        <Canvas>
-          <ambientLight intensity={0.5} />
-          <pointLight position={[10, 10, 10]} />
-          <Sphere args={[1, 32, 32]} position={[0, 0, 0]}>
-            <meshStandardMaterial color="#FF5722" />
-          </Sphere>
-          <OrbitControls enableZoom={false} />
-        </Canvas>
       </div>
     </div>
   );
