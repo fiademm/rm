@@ -5,10 +5,7 @@ import ErrorBoundary from "./utils/ErrorBoundary";
 //import components lazily
 const Home = lazy(() => import('./pages/Home.js')); 
 const About = lazy(() => import('./pages/About.js')); 
-const Articles = lazy(() => import('./pages/Articles.js')); 
-const Article = lazy(() => import('./components/molecules/Article.js')); 
-const Leadership = lazy(() => import('./pages/Leadership.js'));
-const LeaderSet = lazy(() => import('./components/molecules/LeaderSet.js'));
+const AllArticles = lazy(() => import('./pages/AllArticles.js')); 
 const Team = lazy(() => import('./pages/Team.js'));
 const Contact = lazy(() => import('./pages/Contact.js'));
 const Terms = lazy(() => import('./pages/Terms.js'));
@@ -23,8 +20,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
-            <Route path="/Articles" element={<Article />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/Articles" element={<AllArticles />} />
             <Route path="/Leadership" element={<Team />} />
             <Route path="/Terms+&+Conditions" element={<Terms />} />
             <Route path="/Privacy+Policy" element={<Privacy />} />

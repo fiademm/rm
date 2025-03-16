@@ -3,10 +3,9 @@ import Footer from "../components/Footer";
 import Socials from "../components/molecules/Socials";
 import Navbar from "../components/Navbar";
 import Slideshow from "../components/molecules/Slideshow";
-import Articles from "./Articles";
-import Leadership from "./Leadership";
 import Vision from "../components/molecules/Vision";
 import Team from "../components/molecules/Team";
+import Articles from "../components/molecules/Articles";
 
 const Home = () => {
   const images = [
