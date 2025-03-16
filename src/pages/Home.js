@@ -5,6 +5,8 @@ import Navbar from "../components/Navbar";
 import Slideshow from "../components/molecules/Slideshow";
 import Articles from "./Articles";
 import Leadership from "./Leadership";
+import Vision from "../components/molecules/Vision";
+import Team from "../components/molecules/Team";
 
 const Home = () => {
   const images = [
@@ -89,11 +91,17 @@ const Home = () => {
         <div id="home" className="content">
           <Slideshow articles={articles} />
         </div>
+        <div className="content">
+          <Vision />
+        </div>
         <div id="articles" className="content">
           <Articles />
         </div>
-        <div id="leadership" className="content">
+        {/* <div id="leadership" className="content">
           <Leadership />
+        </div> */}
+        <div id="Leadership" className="content">
+          <Team />
         </div>
         <Socials />
         <Footer />

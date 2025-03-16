@@ -9,6 +9,7 @@ const Articles = lazy(() => import('./pages/Articles.js'));
 const Article = lazy(() => import('./components/molecules/Article.js')); 
 const Leadership = lazy(() => import('./pages/Leadership.js'));
 const LeaderSet = lazy(() => import('./components/molecules/LeaderSet.js'));
+const Team = lazy(() => import('./pages/Team.js'));
 const Contact = lazy(() => import('./pages/Contact.js'));
 const Terms = lazy(() => import('./pages/Terms.js'));
 const Privacy = lazy(() => import('./pages/Privacy.js'));
@@ -23,8 +24,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Articles" element={<Article />} />
-            <Route path="/Leadership" element={<LeaderSet />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/Leadership" element={<Team />} />
             <Route path="/Terms+&+Conditions" element={<Terms />} />
             <Route path="/Privacy+Policy" element={<Privacy />} />
             <Route path="/Test" element={<Test />} />
