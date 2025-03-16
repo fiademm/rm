@@ -7,7 +7,7 @@ const Home = lazy(() => import('./pages/Home.js'));
 const About = lazy(() => import('./pages/About.js')); 
 const AllArticles = lazy(() => import('./pages/AllArticles.js')); 
 const Team = lazy(() => import('./pages/Team.js'));
-const Contact = lazy(() => import('./pages/Contact.js'));
+// const Contact = lazy(() => import('./pages/Contact.js'));
 const Terms = lazy(() => import('./pages/Terms.js'));
 const Privacy = lazy(() => import('./pages/Privacy.js'));
 const Test = lazy(() => import('./components/Test.js'));
@@ -20,7 +20,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
-            <Route path="/Contact" element={<Contact />} />
+            {/* <Route path="/Contact" element={<Contact />} /> */}
             <Route path="/Articles" element={<AllArticles />} />
             <Route path="/Leadership" element={<Team />} />
             <Route path="/Terms+&+Conditions" element={<Terms />} />
