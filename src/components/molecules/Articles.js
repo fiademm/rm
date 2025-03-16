@@ -105,7 +105,7 @@ const Articles = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="articles-section-title">Articles</h2>
+        <h2 className="articles-section-title">Articles of Interest</h2>
         <p className="articles-section-subtitle">
           Explore our latest articles and insights.
         </p>

@@ -1,116 +1,186 @@
 /* General Styles */
 .contact-us-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #2c4736, #2c7366);
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2c4736, #2c7366);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-us-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contact-us-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+}
+
+/* Form Styles */
+.contact-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #e0e0e0;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #ff3b2f;
+}
+
+.submit-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Submit Status Messages */
+.submit-success {
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+.submit-error {
+  color: #f44336;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .contact-us-title {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
   }
-  
+
   .contact-us-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: #e0e0e0;
-  }
-  
-  /* Form Styles */
-  .contact-form {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .form-group label {
-    display: block;
     font-size: 1rem;
-    margin-bottom: 5px;
-    color: #e0e0e0;
   }
-  
+
+  .contact-form {
+    padding: 20px;
+  }
+
   .form-group input,
   .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  
-  .form-group textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-  
+
   .submit-button {
-    background: #ff6f61;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    font-size: 0.9rem;
   }
-  
-  .submit-button:hover {
-    background: #ff3b2f;
+}
+
+/* ripples background */
+
+.ripples-container {
+  position: fixed; /* fixed, so it stays put */
+  width: 100%;
+  height: 100%;
+  background: #2c4736;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.ripple {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: ripple-animation 6s infinite ease-out;
+}
+
+.ripple:nth-child(1) {
+  top: 80%;
+  left: 50%;
+  animation-delay: 2s;
+}
+
+.ripple:nth-child(2) {
+  top: 50%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+.ripple:nth-child(3) {
+  top: 20%;
+  left: 70%;
+  animation-delay: 2s;
+}
+
+.ripple:nth-child(4) {
+  top: 20%;
+  left: 30%;
+  animation-delay: 3s;
+}
+
+@keyframes ripple-animation {
+  0% {
+    transform: translate(-70%, -70%) scale(5);
+    opacity: 1;
   }
-  
-  .submit-button:disabled {
-    background: #ccc;
-    cursor: not-allowed;
+  100% {
+    transform: translate(-70%, -70%) scale(30);
+    opacity: 0;
   }
-  
-  /* Submit Status Messages */
-  .submit-success {
-    color: #4caf50;
-    margin-top: 10px;
-  }
-  
-  .submit-error {
-    color: #f44336;
-    margin-top: 10px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .contact-us-title {
-      font-size: 2rem;
-    }
-  
-    .contact-us-subtitle {
-      font-size: 1rem;
-    }
-  
-    .contact-form {
-      padding: 20px;
-    }
-  
-    .form-group input,
-    .form-group textarea {
-      font-size: 0.9rem;
-    }
-  
-    .submit-button {
-      font-size: 0.9rem;
-    }
-  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

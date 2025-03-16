@@ -8,17 +8,6 @@ import Team from "../components/molecules/Team";
 import Articles from "../components/molecules/Articles";
 
 const Home = () => {
-  const images = [
-    "https://static.dezeen.com/uploads/2018/07/skyscraper-movie-designer-concept-architecture_dezeen_2364_hero.jpg",
-    "https://static.dezeen.com/uploads/2018/07/skyscraper-movie-designer-concept-architecture_dezeen_2364_hero.jpg",
-    "https://static.dezeen.com/uploads/2018/07/skyscraper-movie-designer-concept-architecture_dezeen_2364_hero.jpg",
-    "https://static.dezeen.com/uploads/2018/07/skyscraper-movie-designer-concept-architecture_dezeen_2364_hero.jpg",
-    "https://static.dezeen.com/uploads/2018/07/skyscraper-movie-designer-concept-architecture_dezeen_2364_hero.jpg",
-    "https://static.dezeen.com/uploads/2018/07/skyscraper-movie-designer-concept-architecture_dezeen_2364_hero.jpg",
-    "https://static.dezeen.com/uploads/2018/07/skyscraper-movie-designer-concept-architecture_dezeen_2364_hero.jpg",
-    "https://static.dezeen.com/uploads/2018/07/skyscraper-movie-designer-concept-architecture_dezeen_2364_hero.jpg",
-  ];
-
   const articles = [
     {
       title: "The Future of AI",

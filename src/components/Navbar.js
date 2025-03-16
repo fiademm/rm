@@ -34,9 +34,10 @@ const Navbar = () => {
         <li>
           <a href="/Articles">Articles</a>
         </li>
-        {/* <li style={{display: "none"}}>
+        {/* <li style={{display: "none"}}> */}
+        <li>
           <a href="/Contact">Contact us</a>
-        </li> */}
+        </li>
         <li>
           <a href="/Leadership">Our Leadership</a>
         </li>
@@ -48,16 +49,16 @@ const Navbar = () => {
 export default Navbar;
 
 
-const Welcome = () => {
-  return (
-    <>
-      <div className="content glitch-container">
-        <div class="glitch-wrapper">
-          <div class="glitch" data-glitch="You are welcome to RM Foundation">
-            You are welcome to RM Foundation
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+// const Welcome = () => {
+//   return (
+//     <>
+//       <div className="content glitch-container">
+//         <div class="glitch-wrapper">
+//           <div class="glitch" data-glitch="You are welcome to RM Foundation">
+//             You are welcome to RM Foundation
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };

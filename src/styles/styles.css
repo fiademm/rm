@@ -193,7 +193,8 @@
 /* ARTICLES STYLES */
 .articles-all-articles-container {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  background: linear-gradient(180deg, #d5dad7, #fcfcfc); */
   text-align: center;
   width: 100%;
   border-radius: 0.25rem;
@@ -202,7 +203,8 @@
 
 .articles-container {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  background: linear-gradient(180deg, #d5dad7, #fcfcfc); */
   text-align: center;
   width: 100%;
 }
@@ -230,49 +232,50 @@
   padding-bottom: 20px;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  /* mask-image: linear-gradient(to left, transparent, #fcfcfc, transparent); */
 }
 
 /* Articles Grid */
 .articles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 0 auto;
-  width: 100%;
-  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem 2rem;
 }
-
-.article-card {
-  background: #eaedeb;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  min-width: 300px;
+.all-article-card {
   text-align: left;
+  min-width: 24rem;
+  flex: 1;
+  text-align: center;
+  max-width: 50%;
+}
+.all-articles-article-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: .2rem;
 }
 
 /* Article Card */
 .articles-article-card {
-  background: #eaedeb;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: .4rem;
   transition: transform 0.3s ease;
-  min-width: 400px;
+  min-width: 35%;
   text-align: left;
+  padding: 0 1rem;
 }
 
 .articles-article-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-2px);
 }
 
 .articles-article-image {
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  object-fit: cover;
+  max-width: 100%;
+  min-width: 100%;
+  height: 300px;
+  object-fit: contain;
   margin-bottom: 15px;
+  border-radius: .2rem;
 }
 
 .articles-article-title {
@@ -834,6 +837,7 @@
 .meet-the-team-card {
   background: white;
   background: rgba(255, 255, 255, 0.9);
+  background-color: #eaedeb;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -901,6 +905,7 @@
 
 .meet-the-team-modal-content {
   background: white;
+  background-color: #eaedeb;
   padding: 30px;
   border-radius: 15px;
   max-width: 500px;
@@ -980,4 +985,70 @@
   .meet-the-team-member-description {
     font-size: 0.8rem;
   }
+}
+
+
+/* CONTACT US STYLES */
+.contact-container {
+  margin: 50px auto;
+  padding: 30px;
+  background-color: transparent;
+  border-radius: 12px;
+}
+
+.contact-container li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  animation: animate 19s linear infinite;
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c4736;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background: linear-gradient(180deg, #2c4736, #3c6f54);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #3c6f54;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #2c4736;
+}
+
+.contact-us-container {
+  position: relative;
+  z-index: 1;         
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
 }

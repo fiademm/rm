@@ -94,14 +94,14 @@ const AllArticles = () => {
             {articles.map((article) => (
               <motion.div
                 key={article.id}
-                className="article-card"
+                className="all-article-card"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <img
                   src={article.images[0]}
                   alt={article.title}
-                  className="articles-article-image"
+                  className="all-articles-article-image"
                 />
                 <h3 className="articles-article-title">{article.title}</h3>
                 <p className="articles-article-description">

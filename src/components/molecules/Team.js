@@ -9,7 +9,7 @@ const Team = () => {
     {
       id: 1,
       name: "John Doe",
-      role: "CEO",
+      role: "President",
       company: "Tech Corp",
       description: "John is a visionary leader with over 15 years of experience in the tech industry.",
       image: "https://img.freepik.com/premium-photo/portrait-photography-african-business-man_1085768-22.jpg",
@@ -17,7 +17,7 @@ const Team = () => {
     {
       id: 2,
       name: "Jane Smith",
-      role: "CTO",
+      role: "Head of Operations",
       company: "Innovate Inc",
       description: "Jane is a tech enthusiast with a PhD in Computer Science and a passion for innovation.",
       image: "https://th.bing.com/th/id/OIP.TvOvmhFdxni9z59d6yw1qgHaEJ?pid=ImgDet&w=206&h=115&c=7&dpr=1.3",
