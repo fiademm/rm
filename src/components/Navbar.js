@@ -34,7 +34,7 @@ const Navbar = () => {
         <li>
           <a href="/Articles">Articles</a>
         </li>
-        <li>
+        <li style={{display: "none"}}>
           <a href="/Contact">Contact us</a>
         </li>
         <li>
