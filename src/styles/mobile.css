@@ -192,86 +192,6 @@
     font-size: .5rem;
     font-family: 'Lato-Bold';
   }
-
-  /* Cards Container Styling */
-  .article-cards-container,
-  .leadership-cards-container {
-    display: flex;
-    overflow-x: auto;
-    gap: 1.4rem;
-    padding-bottom: 1.4rem; /* Space for scrollbar */
-  }
-
-  /* Hide scrollbar */
-  .article-cards-container::-webkit-scrollbar,
-  .leadership-cards-container::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Card Styling */
-  .article-card,
-  .leadership-card {
-    flex: 0 0 20rem; /* Fixed width for each card */
-    background: #fff;
-    border-radius: 0.2rem;
-    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    border: none;
-  }
-
-  .article-card-image,
-  .leadership-card-image {
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
-  }
-
-  .article-card-content,
-  .leadership-card-content {
-    padding: 0.8rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .article-card-title,
-  .leadership-card-fullname {
-    font-size: .7rem;
-    font-weight: bold;
-    margin: 0 0 0.2rem 0;
-  }
-
-  .article-card-description,
-  .leadership-card-description {
-    font-size: 0.6rem;
-    color: #666;
-    margin: 0 0 0.4rem 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limit to 3 lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .article-card-date,
-  .leadership-card-job-role {
-    font-size: 0.5rem;
-    color: #999;
-    margin: 0 0 0.2rem 0;
-  }
-
-  .article-read-more-button,
-  .leadership-read-more-button {
-    padding: 0.3rem .8rem;
-    border: none;
-    border-radius: 0.2rem;
-    cursor: pointer;
-    font-size: 0.5rem;
-    align-self: flex-start;
-    margin-top: auto;
-  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -287,10 +207,6 @@
     flex: 1;
   }
   /* PRIVACY POLICY  and  TERMS AND CONDITIONS*/
-  .all-articles-articles-grid,
-  .leaderset-grid {
-    grid-template-columns: 1fr;
-  }
 
   .privacy-policy,
   .terms-and-conditions {
@@ -320,33 +236,37 @@
   .terms-header span {
     display: none;
   }
+  
+.meet-the-team-close-modal-button:hover {
+  background: #4a6b5b;
+}
 
-  /* LEADERSET  AND  ARTICLE */
-  .all-articles-articles-grid,
-  .leaderset-grid {
-    grid-template-columns: 1fr; /* 1 column for mobile */
+  .meet-the-team-section-title {
+    font-size: 2rem;
   }
 
-  .all-articles-articles-header,
-  .leaderset-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  .meet-the-team-section-subtitle {
+    font-size: 1rem;
   }
 
-  .all-articles-back-button,
-  .leaderset-back-button {
-    margin-top: 10px;
+  .meet-the-team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  .all-articles-article-card,
-  .leaderset-card {
-    margin-bottom: 20px; /* Add spacing between cards */
+  .meet-the-team-profile-image {
+    width: 80px;
+    height: 80px;
   }
 
-  .all-articles-article-card:last-child,
-  .leaderset-card:last-child {
-    margin-bottom: 0; /* Remove margin for the last card */
+  .meet-the-team-member-name {
+    font-size: 1.3rem;
+  }
+
+  .meet-the-team-member-role {
+    font-size: 0.9rem;
+  }
+
+  .meet-the-team-member-description {
+    font-size: 0.8rem;
   }
 }

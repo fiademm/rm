@@ -390,6 +390,14 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .articles-article-card {
+    border-radius: .4rem;
+    transition: transform 0.3s ease;
+    min-width: 100%;
+    text-align: left;
+    padding: 0 1rem;
+  }
+  
   .articles-section-title {
     font-size: 2rem;
   }
@@ -403,19 +411,19 @@
   }
 
   .article-title {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .article-description {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .article-date {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .view-article-button {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -849,11 +857,12 @@
 }
 
 .meet-the-team-profile-image {
-  width: 100px;
-  height: 100px;
+  width: 9rem;
+  height: 9rem;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: .8rem;
   object-fit: cover;
+  border: .2rem solid #2c4736;
 }
 
 .meet-the-team-member-name {
@@ -872,6 +881,10 @@
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 15px;
+  height: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
 }
 
 .meet-the-team-view-more-button {
@@ -908,9 +921,9 @@
   background-color: #eaedeb;
   padding: 30px;
   border-radius: 15px;
-  max-width: 500px;
+  max-width: 60%;
   width: 90%;
-  text-align: center;
+  text-align: left;
   position: relative;
 }
 
@@ -937,7 +950,8 @@
 .meet-the-team-modal-member-description {
   font-size: 1rem;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  white-space: pre-wrap;
 }
 
 .meet-the-team-close-modal-button {
