@@ -112,7 +112,7 @@
 
 .slide img {
   width: 100%;
-  height: 60vh; /* Adjust height as needed */
+  height: 90vh; /* Adjust height as needed */
   object-fit: cover; /* Ensure images cover the slide area */
   border-radius: 0.6rem;
 }
@@ -165,13 +165,18 @@
 }
 
 .article-description {
-  margin: 10px 0;
-  font-size: 16px;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-family: 'Lato-Light';
+  height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
 }
 
 .article-date {
   margin: 0;
-  font-size: 14px;
+  font-size: .8rem;
   color: #ccc;
 }
 
@@ -183,7 +188,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: .8rem;
 }
 
 .read-more-button:hover {
@@ -1014,6 +1019,8 @@
   padding: 30px;
   background-color: transparent;
   border-radius: 12px;
+  height: auto;
+  flex: 1;
 }
 
 .contact-container li {
