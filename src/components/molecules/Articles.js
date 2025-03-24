@@ -142,6 +142,7 @@ const Articles = () => {
           ))}
         </div>
 
+      </motion.div>
         {/* Modal */}
         {isModalOpen && selectedArticle && (
           <div className="articles-modal-overlay" onClick={closeModal}>
@@ -180,7 +181,6 @@ const Articles = () => {
             </motion.div>
           </div>
         )}
-      </motion.div>
     </>
   );
 };
