@@ -26,7 +26,7 @@ const Slideshow = ({ articles }) => {
               <h3 className="article-title">{article.title}</h3>
               <p className="article-description">{article.description}</p>
               <p className="article-date">{article.date}</p>
-              <button
+              <button hidden
                 className="read-more-button"
                 onClick={() => alert(`Read more about: ${article.title}`)}
               >

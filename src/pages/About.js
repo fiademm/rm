@@ -41,9 +41,10 @@ const About = () => {
             >
               <h3 className="about-section-title">Our Mission</h3>
               <p className="about-section-description">
-                To mobilise resources effectively and efficiently to support
-                sustainable development initiatives, empower communities, and
-                drive positive change globally.
+                To collaborate with our middle-class members and other key
+                stakeholders to engage in programmes and projects that enhances
+                the lives of or members and supports the developmental agendas
+                in our country Ghana.
               </p>
             </motion.div>
 
@@ -56,11 +57,11 @@ const About = () => {
             >
               <h3 className="about-section-title">Our Vision</h3>
               <p className="about-section-description">
-                To create a sustainable future where innovation and technology
-                empower communities, drive positive change, and foster global
-                collaboration. We envision a world where every individual has
-                access to opportunities that enable them to thrive and
-                contribute to a better tomorrow.
+                To create a sustainable and forward-thinking foundation that
+                mobilises empowered and highly trained middle-class
+                professionals in Ghana and the diaspora to support social
+                democratic ideals and principles to better the well-being of
+                Ghana and Ghanaians.
               </p>
             </motion.div>
 
@@ -76,29 +77,25 @@ const About = () => {
                 <div className="about-value-card">
                   <h4>Integrity</h4>
                   <p>
-                    We uphold the highest standards of honesty, transparency,
-                    and accountability in all our actions and decisions.
+                  Carry out our membership recruitment in a transparent and objective manner.
                   </p>
                 </div>
                 <div className="about-value-card">
                   <h4>Collaboration</h4>
                   <p>
-                    We believe in the power of partnerships and teamwork to
-                    achieve shared goals and create lasting impact.
+                  Recruit and collaborate with middle class members and partners who have integrity, positivity and respect as their core principles.
                   </p>
                 </div>
                 <div className="about-value-card">
                   <h4>Sustainability</h4>
                   <p>
-                    We are committed to ensuring that our initiatives are
-                    environmentally, socially, and economically sustainable.
+                  Only engage in projects that seeks to impact positively in the lives of our members and the society.
                   </p>
                 </div>
                 <div className="about-value-card">
                   <h4>Impact</h4>
                   <p>
-                    We measure our success by the tangible and positive changes
-                    we bring to the communities we serve.
+                  Support in the achievement of building a better Ghana agenda of the country.
                   </p>
                 </div>
               </div>

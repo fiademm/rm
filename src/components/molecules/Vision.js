@@ -24,10 +24,7 @@ const Vision = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          To create a sustainable future where innovation and technology empower
-          communities, drive positive change, and foster global collaboration. We
-          envision a world where every individual has access to opportunities
-          that enable them to thrive and contribute to a better tomorrow.
+          To create a sustainable and forward-thinking foundation that mobilises empowered and highly trained middle-class professionals in Ghana and the diaspora to support social democratic ideals and principles to better the well-being of Ghana and Ghanaians.
         </motion.p>
       </div>
     </motion.div>

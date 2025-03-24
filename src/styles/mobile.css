@@ -183,14 +183,14 @@
 
   .view-all-button,
   .leadership-view-all-button {
-    padding: 0.4rem .5rem;
+    padding: 0.4rem 0.5rem;
     background-color: #cf9943;
     color: white;
     border: none;
     border-radius: 1rem;
     cursor: pointer;
-    font-size: .5rem;
-    font-family: 'Lato-Bold';
+    font-size: 0.5rem;
+    font-family: "Lato-Bold";
   }
   .footer {
     display: flex;
@@ -236,17 +236,22 @@
   .terms-header span {
     display: none;
   }
-  
-.meet-the-team-close-modal-button:hover {
-  background: #4a6b5b;
-}
+  .team-team-container {
+    padding: 1rem 1rem;
+    width: 100vw;
+    display: flex;
+    background-color: #fcfcfc;
+  }
+  .meet-the-team-close-modal-button:hover {
+    background: #4a6b5b;
+  }
 
   .meet-the-team-section-title {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .meet-the-team-section-subtitle {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   .meet-the-team-grid {
@@ -259,14 +264,237 @@
   }
 
   .meet-the-team-member-name {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .meet-the-team-member-role {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .meet-the-team-member-description {
     font-size: 0.8rem;
+  }
+
+  /* articles in all articles page */
+  .articles-all-articles-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .articles-section-title {
+    font-size: 1rem;
+  }
+
+  .articles-section-subtitle {
+    font-size: 14px;
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 2rem;
+  }
+  
+  .all-article-card {
+    margin: 0 10px; /* Add some margin for better spacing */
+    min-width: 90%;
+    width: 90%;
+  }
+
+  .all-articles-article-image {
+    height: 10rem; /* Smaller image height for mobile */
+  }
+
+  .articles-article-title {
+    font-size: 18px;
+  }
+
+  .articles-article-description {
+    font-size: 13px;
+  }
+
+  .articles-article-date {
+    font-size: 11px;
+  }
+
+  .articles-view-article-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .articles-modal-article-title {
+    font-size: 20px;
+  }
+
+  .articles-modal-article-description {
+    font-size: 14px;
+  }
+
+  .articles-modal-article-date {
+    font-size: 12px;
+  }
+
+  .articles-close-modal-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* articles on homepage */
+  .articles-section-title {
+    font-size: 1.6rem;
+  }
+
+  .articles-section-subtitle {
+    font-size: .8rem;
+  }
+
+  .articles-horizontal-scroll-container {
+    gap: .8rem;
+    padding-bottom: .8rem;
+  }
+
+  .articles-article-card {
+    flex: 0 0 250px; /* Smaller card width for mobile */
+  }
+
+  .articles-article-image {
+    height: 10rem; /* Smaller image height for mobile */
+    width: 100%;
+  }
+
+  .articles-article-title {
+    font-size: .9rem;
+  }
+
+  .articles-article-date {
+    font-size: .6rem;
+  }
+
+  .articles-article-description {
+    font-size: .7rem;
+  }
+
+  .articles-view-article-button {
+    padding: 8px 16px;
+    font-size: .6rem;
+  }
+
+  /* articles modal styles */
+  .articles-modal-overlay {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .articles-modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 1rem;
+    scrollbar-width: none;
+  }
+  .articles-slideshow-container {
+    margin-bottom: 1rem;
+  }
+  .articles-slideshow-image {
+    height: 10rem; 
+  }
+  .articles-modal-article-title {
+    font-size: 1rem;
+  }
+  .articles-modal-article-date {
+    font-size: .6rem;
+  }
+
+  .articles-modal-article-description {
+    font-size: .7rem;
+  }
+
+  .articles-close-modal-button {
+    padding: 8px 16px;
+    font-size: .6rem;
+  }
+
+  /* vision styles */
+  .vision-container {
+    padding: 2rem .8rem;
+    border-radius: .98rem;
+  }
+
+  .vision-title {
+    font-size: 1.4rem;
+  }
+
+  .vision-text {
+    font-size: .8rem;
+  }
+
+  /* meet the team modal */
+  .meet-the-team-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .meet-the-team-modal-content {
+    background: white;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px;
+    text-align: center;
+    scrollbar-width: none;
+  }
+  
+  .meet-the-team-modal-profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #2c4736;
+  }
+  
+  .meet-the-team-modal-member-name {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+  
+  .meet-the-team-modal-member-role {
+    font-size: .8rem;
+    color: #4a6b5b;
+    margin-bottom: 20px;
+  }
+  
+  .meet-the-team-modal-member-description {
+    font-size: .8rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: left;
+    white-space: pre-wrap;
+  }
+  
+  .meet-the-team-close-modal-button {
+    padding: .5rem 1.6rem;
+    background: #2c4736;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: .8rem;
+  }
+  
+  .meet-the-team-close-modal-button:hover {
+    background: #4a6b5b;
   }
 }

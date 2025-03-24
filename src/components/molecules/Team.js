@@ -8,7 +8,7 @@ const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Ing.Dr. Desmond Aryee-Boi",
+      name: "Ing. Dr. Desmond Aryee-Boi",
       role: "President",
       company: "RM Foundation",
       description: "Ing. Dr. Desmond Aryee-Boi is a renowned Engineer, Professor/Specialist in Technical and Vocational Education and Training (TVET), and strategic leader with a distinguished track record in infrastructure development, project development and management, and governance. He previously served as the Executive Secretary of the Infrastructure Committee of 2024 Manifesto Group, member of the 2021 National Strategic Committee and lately the Vice-Chairman of the 2025-Transition Team in charge of Works, Housing and Water Resources.\n\nAs a founding member and first President of the Resource Mobilization Foundation, Dr. Aryee-Boi is the visionary behind several groundbreaking initiatives, including the RMF-Intel Unit, which is affiliated with National Security, as well as the Business Development and RMF Education & Training Units. His strategic foresight and leadership have positioned the RMF as a key player in resource mobilization, institutional transformation, and social empowerment in the country.\n\nBeyond his professional expertise, Dr. Aryee-Boi is deeply passionate about the well-being of the middle-class, recognizing their crucial role in nation-building. He is committed to empowering professionals and strengthening their economic resilience, while also supporting grassroots communities to ensure all-inclusive development, socio-economic mobility, and cohesive national progress and prosperity. His work continues to bridge the gap between economic classes, fostering a more equitable and prosperous society.",

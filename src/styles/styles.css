@@ -338,10 +338,10 @@
   background: white;
   padding: 2rem;
   border-radius: 15px;
-  max-width: 80%;
   text-align: left;
   position: relative;
   max-height: 90%;
+  max-width: 80%;
   overflow-y: scroll;
 }
 
@@ -397,45 +397,6 @@
 
 .articles-close-modal-button:hover {
   background: #4a6b5b;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .articles-article-card {
-    border-radius: .4rem;
-    transition: transform 0.3s ease;
-    min-width: 100%;
-    text-align: left;
-    padding: 0 1rem;
-  }
-  
-  .articles-section-title {
-    font-size: 2rem;
-  }
-
-  .articles-section-subtitle {
-    font-size: 1rem;
-  }
-
-  .article-card {
-    padding: 15px;
-  }
-
-  .article-title {
-    font-size: 1rem;
-  }
-
-  .article-description {
-    font-size: 0.7rem;
-  }
-
-  .article-date {
-    font-size: 0.6rem;
-  }
-
-  .view-article-button {
-    font-size: 0.6rem;
-  }
 }
 
 /* SOCIALS STYLES */
@@ -625,22 +586,6 @@
 .vision-container:hover {
   transform: scale(1.02);
   transition: transform 0.3s ease;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .vision-container {
-    padding: 40px 15px;
-    border-radius: 15px;
-  }
-
-  .vision-title {
-    font-size: 2rem;
-  }
-
-  .vision-text {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -979,39 +924,6 @@
 .meet-the-team-close-modal-button:hover {
   background: #4a6b5b;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .meet-the-team-section-title {
-    font-size: 2rem;
-  }
-
-  .meet-the-team-section-subtitle {
-    font-size: 1rem;
-  }
-
-  .meet-the-team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .meet-the-team-profile-image {
-    width: 80px;
-    height: 80px;
-  }
-
-  .meet-the-team-member-name {
-    font-size: 1.3rem;
-  }
-
-  .meet-the-team-member-role {
-    font-size: 0.9rem;
-  }
-
-  .meet-the-team-member-description {
-    font-size: 0.8rem;
-  }
-}
-
 
 /* CONTACT US STYLES */
 .contact-container {
