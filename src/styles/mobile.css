@@ -1,5 +1,5 @@
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /* Hide scrollbar for WebKit browsers (e.g., Chrome, Safari) */
   body::-webkit-scrollbar {
     display: none;
