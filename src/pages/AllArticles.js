@@ -117,9 +117,9 @@ const AllArticles = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="articles-section-title">All Articles</h2>
+          <h2 className="articles-section-title">All News</h2>
           <p className="articles-section-subtitle">
-            Explore our latest articles and insights.
+            Explore our latest news and insights.
           </p>
 
           <div className="articles-grid">
@@ -144,7 +144,7 @@ const AllArticles = () => {
                   className="articles-view-article-button"
                   onClick={() => openModal(article)}
                 >
-                  View Article
+                  Read More
                 </button>
               </motion.div>
             ))}
