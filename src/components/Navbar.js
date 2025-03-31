@@ -31,15 +31,15 @@ const Navbar = () => {
         <li>
           <a href="/About">About us</a>
         </li>
-        <li>
-          <a href="/Articles">Articles</a>
-        </li>
         {/* <li style={{display: "none"}}> */}
         <li>
-          <a href="/Contact">Contact us</a>
+          <a href="/News">News</a>
         </li>
         <li>
           <a href="/Leadership">Our Leadership</a>
+        </li>
+        <li>
+          <a href="/Contact">Contact us</a>
         </li>
       </ul>
     </nav>
