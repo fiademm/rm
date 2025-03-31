@@ -78,8 +78,8 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-color);
-  font-size: 0.9rem;
+  background: linear-gradient(135deg, #2c4736, #4a6b5b, #2c4736);
+  font-size: .85rem;
 }
 .footer-container-left,
 .footer-container-right {
@@ -248,7 +248,7 @@
 }
 
 .articles-container {
-  padding: 80px 20px;
+  padding: 20px 20px;
   /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
   background: linear-gradient(180deg, #d5dad7, #fcfcfc); */
   text-align: center;
@@ -1036,3 +1036,94 @@
   text-align: center;
   color: white;
 }
+
+/* Footer container */
+.sub-footer-container {
+  background: linear-gradient(135deg, #2c4736, #4a6b5b, #2c4736);
+  color: #ecf0f1;
+  padding: 3rem 4rem 1rem 4rem;
+}
+
+/* Footer content layout */
+.sub-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16%;
+}
+
+/* Contact information section */
+.sub-footer-contact-info {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  height: 24rem;
+}
+
+.sub-footer-contact-info h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: .8rem;
+  border-bottom: 2px solid #c78927;
+}
+
+.sub-footer-contact-item {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.sub-footer-contact-item i {
+  font-size: 1.2rem;
+  color: #c78927;
+  margin-right: 1rem;
+  margin-top: .2rem;
+}
+
+.sub-footer-contact-item p {
+  margin: 0 0 5px;
+  line-height: 1.6;
+}
+
+.sub-footer-contact-item a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sub-footer-contact-item a:hover {
+  color: #c78927;
+}
+
+/* Map section */
+.sub-footer-map-container {
+  flex: 1;
+  height: 24rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2);
+}
+
+.sub-footer-map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Footer bottom section */
+.sub-footer-footer-bottom {
+  background-color: #1a252f;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.sub-footer-footer-bottom p {
+  margin: 0;
+  color: #bdc3c7;
+  font-size: 14px;
+}
+
+/* Font Awesome icons (if not already included in your project) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');

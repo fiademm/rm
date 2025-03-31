@@ -8,7 +8,7 @@ const Footer = () => {
     <>
         <div className="footer">
           <span className="footer-container-left">
-            Copyright @ 2025 RM Foundation
+          &copy; {new Date().getFullYear()} RM Foundation. All rights reserved.
           </span>
           <div className="footer-container-right">
             <span onClick={() => navigate("/Terms+&+Conditions")}>Terms & Conditions</span>

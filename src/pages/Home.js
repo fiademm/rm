@@ -6,6 +6,7 @@ import Slideshow from "../components/molecules/Slideshow";
 import Vision from "../components/molecules/Vision";
 import Team from "../components/molecules/Team";
 import Articles from "../components/molecules/Articles";
+import SubFooter from "../components/SubFooter";
 
 const Home = () => {
   const articles = [
@@ -77,6 +78,7 @@ const Home = () => {
           <Articles />
         </div>
         <Socials />
+        <SubFooter />
         <Footer />
       </div>
     </>

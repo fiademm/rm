@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import SubFooter from "../SubFooter";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -88,6 +89,7 @@ const ContactUs = () => {
           </form>
         </div>
       </div>
+      <SubFooter />
       <Footer />
     </>
   );

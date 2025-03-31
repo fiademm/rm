@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SubFooter from "../components/SubFooter";
 
 const AllArticles = () => {
   const [selectedArticle, setSelectedArticle] = useState(null);
@@ -190,6 +191,7 @@ const AllArticles = () => {
           )}
         </motion.div>
       </div>
+      <SubFooter />
       <Footer />
     </>
   );
