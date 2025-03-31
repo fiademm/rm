@@ -76,12 +76,6 @@ const Home = () => {
         <div id="articles" className="content">
           <Articles />
         </div>
-        {/* <div id="leadership" className="content">
-          <Leadership />
-        </div> */}
-        <div id="Leadership" className="content">
-          <Team />
-        </div>
         <Socials />
         <Footer />
       </div>

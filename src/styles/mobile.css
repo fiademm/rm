@@ -29,70 +29,121 @@
   }
 
   /* slideshow styles */
-  .slideshow-container {
+  /* Main container */
+  .swiper-container {
     width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-  }
-
-  .slide {
     position: relative;
-    text-align: center;
+    overflow: hidden;
   }
 
-  .slide img {
-    width: 100%;
-    height: 40vh; /* Adjust height as needed */
-    object-fit: cover; /* Ensure images cover the slide area */
-    border-radius: 0.6rem;
-  }
-
+  /* Slide content */
   .slide-content {
+    position: relative;
+    height: 25vh;
+    width: 100%;
+  }
+
+  /* Slide image */
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Slide overlay */
+  .slide-overlay {
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 0.8rem;
-    border-radius: 0.4rem;
-    text-align: left;
+    padding: .4rem .6rem;
+    box-sizing: border-box;
   }
 
-  /* Customize arrows */
-  .slick-prev,
-  .slick-next {
-    z-index: 1;
-    width: 2rem;
-    height: 2rem;
+  /* Slide title */
+  .article-title {
+    margin: 0 0 8px 0;
+    font-size: 75rem;
+    font-family: 'Lato-Regular';
   }
 
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 0.8rem;
+  /* Slide description */
+  .article-description {
+    margin: 0 0 8px 0;
+    font-size: .55rem;
   }
 
-  .slick-prev {
-    left: -100px;
+  /* Slide date */
+  .article-date {
+    font-size: .55rem;
+    opacity: 0.8;
   }
 
-  .slick-next {
-    right: -100px;
+  /* Navigation buttons */
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0%;
+    background-color: rgba(80, 45, 10, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    border: none;
+    outline: none;
+  }
+  
+  .swiper-button-prev {
+    left: 1rem;
+  }
+  
+  .swiper-button-next {
+    right: 1rem;
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #ff4500;
+  }
+  
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(229, 110, 89, 0.1);
+  }
+
+  /* Remove default Swiper button styling */
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    display: none;
   }
 
   .article-title {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: bold;
   }
 
   .article-description {
-    margin: 0.5rem 0;
-    font-size: 0.65rem;
+    margin: 0.3rem 0;
+    font-size: 0.6rem;
   }
 
   .article-date {
     margin: 0;
-    font-size: 0.6rem;
+    font-size: 0.45rem;
     color: #ccc;
   }
 
@@ -251,7 +302,7 @@
   }
 
   .meet-the-team-section-subtitle {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .meet-the-team-grid {
@@ -264,15 +315,19 @@
   }
 
   .meet-the-team-member-name {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .meet-the-team-member-role {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   .meet-the-team-member-description {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+  }
+  .meet-the-team-view-more-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.65rem;
   }
 
   /* articles in all articles page */
@@ -295,7 +350,7 @@
     grid-template-columns: 1fr; /* Single column for mobile */
     gap: 2rem;
   }
-  
+
   .all-article-card {
     margin: 0 10px; /* Add some margin for better spacing */
     min-width: 90%;
@@ -346,12 +401,12 @@
   }
 
   .articles-section-subtitle {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .articles-horizontal-scroll-container {
-    gap: .8rem;
-    padding-bottom: .8rem;
+    gap: 0.8rem;
+    padding-bottom: 0.8rem;
   }
 
   .articles-article-card {
@@ -364,20 +419,20 @@
   }
 
   .articles-article-title {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .articles-article-date {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   .articles-article-description {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .articles-view-article-button {
     padding: 8px 16px;
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   /* articles modal styles */
@@ -395,28 +450,28 @@
     margin-bottom: 1rem;
   }
   .articles-slideshow-image {
-    height: 10rem; 
+    height: 10rem;
   }
   .articles-modal-article-title {
     font-size: 1rem;
   }
   .articles-modal-article-date {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   .articles-modal-article-description {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .articles-close-modal-button {
     padding: 8px 16px;
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   /* vision styles */
   .vision-container {
-    padding: 2rem .8rem;
-    border-radius: .98rem;
+    padding: 2rem 0.8rem;
+    border-radius: 0.98rem;
   }
 
   .vision-title {
@@ -424,7 +479,7 @@
   }
 
   .vision-text {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   /* meet the team modal */
@@ -440,7 +495,7 @@
     align-items: center;
     z-index: 1000;
   }
-  
+
   .meet-the-team-modal-content {
     background: white;
     border-radius: 10px;
@@ -452,7 +507,7 @@
     text-align: center;
     scrollbar-width: none;
   }
-  
+
   .meet-the-team-modal-profile-image {
     width: 150px;
     height: 150px;
@@ -461,40 +516,73 @@
     margin-bottom: 20px;
     border: 3px solid #2c4736;
   }
-  
+
   .meet-the-team-modal-member-name {
     font-size: 1rem;
     color: #2c3e50;
     margin-bottom: 8px;
   }
-  
+
   .meet-the-team-modal-member-role {
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #4a6b5b;
     margin-bottom: 20px;
   }
-  
+
   .meet-the-team-modal-member-description {
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #666;
     line-height: 1.6;
     margin-bottom: 2rem;
     text-align: left;
     white-space: pre-wrap;
   }
-  
+
   .meet-the-team-close-modal-button {
-    padding: .5rem 1.6rem;
+    padding: 0.5rem 1.6rem;
     background: #2c4736;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  
+
   .meet-the-team-close-modal-button:hover {
     background: #4a6b5b;
+  }
+
+  /* Values Section */
+  .about-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+    box-sizing: border-box;
+  }
+
+  .about-value-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 0.9rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    min-height: 200px;
+  }
+
+  .about-value-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .about-value-card h4 {
+    font-size: 0.75rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  .about-value-card p {
+    font-size: 0.65rem;
+    line-height: 1.6;
+    color: #e0e0e0;
   }
 }
