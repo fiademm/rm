@@ -30,12 +30,20 @@
   align-items: center;
 }
 .logo {
-  width: 5rem;
   cursor: pointer;
+  aspect-ratio: 4/3;
+  width: 4rem;
 }
 .logo-text {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: "Lato-Black";
+}
+.text-logo {
+  color: #e0b267;
+  font-size: 1.38rem;
+  font-family: "Lato-Black";
+  word-spacing: .2rem;
+  letter-spacing: .1rem;
 }
 
 /* Navigation Menu */

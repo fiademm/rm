@@ -18,6 +18,8 @@ const Navbar = () => {
         {/* <span className="logo-text">RM Foundation</span> */}
       </div>
 
+      <span className="text-logo">RESOURCE MOBILISATION FOUNDATION  </span>
+
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         ☰

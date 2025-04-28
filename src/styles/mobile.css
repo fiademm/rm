@@ -27,7 +27,9 @@
     width: 3rem;
     cursor: pointer;
   }
-
+  .text-logo {
+    display: none;
+  }
   /* slideshow styles */
   /* Main container */
   .swiper-container {
